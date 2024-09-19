@@ -13,13 +13,14 @@
   <body>
     <main class="flex justify-center text-center mt-28">
       <div>
-        <div class="stat-value">89,400</div>
+        <div id="amount-of-balance" class="stat-value">89400</div>
         <div class="divider"></div>
-        <button class="btn btn-glass">Add Money</button>
+        <button id="show-addmoney" class="btn btn-glass">Add Money</button>
 
-        <button class="btn btn-glass">Cash Out</button>
+        <button id="show-cashOut" class="btn btn-glass">Cash Out</button>
         <div class="divider"></div>
-        <form class="card-body">
+        <!-- add money -->
+        <form id="add-money-form" class="card-body">
           <div class="form-control">
             <label class="label">
               <span class="label-text font-bold">Amount</span>
@@ -50,8 +51,41 @@
             </button>
           </div>
         </form>
+        <!-- cash Out -->
+        <form id="cashOut-form" class="card-body hidden">
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text font-bold">Amount</span>
+            </label>
+            <input
+              id="amount-of-cashOut"
+              type="text"
+              placeholder="Amount"
+              class="input input-bordered rounded-full"
+              required />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text font-bold">Pin</span>
+            </label>
+            <input
+              id="pin-of-cashOut"
+              type="text"
+              placeholder="Enter Your Pin"
+              class="input input-bordered rounded-full"
+              required />
+          </div>
+          <div class="form-control mt-6">
+            <button
+              id="btn-cash-out"
+              class="btn btn-primary rounded-full text-white bg-red-700 border-none">
+              Cash Out
+            </button>
+          </div>
+        </form>
       </div>
     </main>
     <script src="./home.js"></script>
+    <script src="./feature.js"></script>
   </body>
 </html>
