@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Payoo | Home</title>
+  </head>
+  <body>
+    <main class="flex justify-center text-center mt-28">
+      <div>
+        <div class="stat-value">89,400</div>
+        <div class="divider"></div>
+        <button class="btn btn-glass">Add Money</button>
+
+        <button class="btn btn-glass">Cash Out</button>
+        <div class="divider"></div>
+        <form class="card-body">
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text font-bold">Amount</span>
+            </label>
+            <input
+              id="amount-of-value"
+              type="text"
+              placeholder="Amount"
+              class="input input-bordered rounded-full"
+              required />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text font-bold">Pin</span>
+            </label>
+            <input
+              id="pin-of-value"
+              type="text"
+              placeholder="Enter Your Pin"
+              class="input input-bordered rounded-full"
+              required />
+          </div>
+          <div class="form-control mt-6">
+            <button
+              id="btn-add-money"
+              class="btn btn-primary rounded-full text-white">
+              Add Money
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="./home.js"></script>
+  </body>
+</html>
